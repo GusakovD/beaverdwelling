@@ -11,6 +11,7 @@ const jsonParser = bodyParser.json();
 const fs = require("fs");
 const index = fs.readFileSync('./index.html', 'utf8');
 
+console.log("server is run");
 
 app.get(/\/page\d/, function(request, response){
 
