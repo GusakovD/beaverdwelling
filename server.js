@@ -45,6 +45,8 @@ app.post("/form", jsonParser, function (request, response) {
 
 
 app.use(function(req, res) {
+    console.log(request.url);
+
     file.serve(req, res);
 });
 
